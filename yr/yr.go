@@ -9,7 +9,7 @@ import (
    "os"
    "strconv"
    "strings"
-   "github.com/FelixKnutsen/funtemps/conv"
+   "github.com/AmirKrpo/funtemps1/conv"
 )
 
 
@@ -76,7 +76,7 @@ func ConvertTemperatures() {
            continue
        }
        if i == len(lines)-1 { // Hvis det er siste linje, legg til en ny linje med tekst
-           newLine := []string{"Data er gyldig per 18.03.2023 (CC BY 4.0)", "Meteorologisk institutt (MET)", "endringen er gjort av", "Felix Knutsen"}
+           newLine := []string{"Data er gyldig per 18.03.2023 (CC BY 4.0)", "Meteorologisk institutt (MET)", "endringen er gjort av", "Amir Krpo"}
            fmt.Println(newLine)
            err = writer.Write(newLine)
            if err != nil {
